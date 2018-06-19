@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="header">
+      <div>Hi I'm PERMANENT</div>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="nav-expand">
+        <button>Hamburger</button>
+      </div>
+    </div>
+    <div class="main">
+    </div>
+    <script>
+      document.querySelector(".nav-expand").addEventListener("click", function(e) {
+        console.log("click");
+        var nav = document.querySelector(".nav");
+        var display = nav.style.display;
+        if (display === "flex") {
+          nav.style.display = "none";
+        } else {
+          nav.style.display = "flex";
+        }
+      });
+    </script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

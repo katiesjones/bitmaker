@@ -1,0 +1,139 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url("../img/polka_dot_background.png") repeat center center fixed;
+}
+
+p {
+  margin-bottom: 1em;
+}
+.header {
+  display: flex;
+  width: 100%;
+  background: #4DD0E1;
+  color: #fff;
+  padding: 20px;
+}
+
+.brand {
+  margin-right: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-expand {
+  margin-left: auto;
+}
+
+.hero {
+  text-align: center;
+  font-size: 50px;
+  background: #FCE4EC url("../img/cupcake2.png") no-repeat center center;
+  /* background: url("../img/cupcake.png") no-repeat center center fixed; */
+  /* background-size: cover; */
+  height: 300px;
+}
+
+.main {
+  padding: 20px;
+}
+
+.subhead {
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(221, 101, 137);
+  text-align: center;
+  padding: 20px;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.subtitle {
+  padding-top: 10px;
+  padding-left: 20px;
+  vertical-align: top;
+  max-width: 800px;
+}
+
+.foodOne {
+  padding-left: 40px;
+  list-style-type: circle;
+}
+
+.instructions {
+  padding-top: 20px;
+  max-width: 800px;
+}
+
+.hide {
+  display: none;
+}
+
+.linebreak {
+  opacity: 0.8;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
+/* .nav-expand {
+  display: none;
+} */
+
+
+
+@media (min-width: 769px) {
+  .recipe {
+    flex-direction: row;
+  }
+}
+
+/* @media (min-width: 769px) {
+  .navexpand {
+    display: none
+  }
+} */
+/*
+@media (max-width: 769px) {
+  .nav {
+    display: none
+  }
+} */
+
+@media (min-width: 800px) {
+  .recipe {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 800px) {
+  .instructions {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+  }
+}
