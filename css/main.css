@@ -7,11 +7,12 @@ p {
   margin-bottom: 1em;
 }
 .header {
-  display: flex;
   width: 100%;
   background: #4DD0E1;
   color: #fff;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .brand {
@@ -20,14 +21,17 @@ p {
   color: #fff;
 }
 
-.nav {
-  display: flex;
-  flex-direction: row;
+.hamburger {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 95%;
 }
 
 
+
 .nav li {
-  margin-right: 20px;
+  margin: 20px auto;
 }
 
 .nav li a {
@@ -100,40 +104,49 @@ p {
   max-width: 600px;
 }
 
-/* .nav-expand {
-  display: none;
-} */
-
-
 
 @media (min-width: 769px) {
   .recipe {
     flex-direction: row;
   }
+
+  .navbar {
+    display: flex;
+    display: none;
+  }
 }
 
-/* @media (min-width: 769px) {
-  .navexpand {
-    display: none
-  }
-} */
-/*
-@media (max-width: 769px) {
-  .nav {
-    display: none
-  }
-} */
-
-@media (min-width: 800px) {
-  .recipe {
-    justify-content: center;
-  }
-}
 
 @media (min-width: 800px) {
   .instructions {
     display: block;
     margin-left: auto;
-    margin-right: auto }
+    margin-right: auto;
+  }
+
+  .recipe {
+    justify-content: center;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav li {
+    margin: 0 10px;
+  }
+
+  .navbar {
+    display: block !important;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hamburger {
+    display: none;
   }
 }
