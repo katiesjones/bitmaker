@@ -6,6 +6,11 @@ body {
 p {
   margin-bottom: 1em;
 }
+
+.pf-card-promoter {
+    bottom: 100px !important;
+ }
+
 .header {
   width: 100%;
   background: #4DD0E1;
